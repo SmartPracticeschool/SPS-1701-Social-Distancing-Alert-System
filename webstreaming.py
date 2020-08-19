@@ -47,7 +47,7 @@ writer = None
 #Routing to the HTML page
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('base.html')
 
 def gen():
     #Loop over the frames of the video/live stream

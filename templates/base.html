@@ -2,48 +2,48 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" contents="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title> Social Distance Voilation </title>
-    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/booststrap.min.css" rel="stylesheet">
+    <title>Social Distancing Alerting System</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/hs/bootstrap.min.js"></script>
-    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <style>
-    .bg-dark{
-        background-color: #42678c!important;
-    }
-    #result{
-        color: #0a1c4ed1;
-    }
+        .bg-dark {
+            background-color: #30317c !important;
+        }
+        img {
+            float: left;
+        }
     </style>
+</head>
+
 <body>
-    <nav class="navbar navbar-dark bg-warning">
-        <div class="container">
-            <a class="navbar-brand" href="#">Social Distance Voilation Detector </a>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="col-lg-12" style="text-align:center">
+            <a class="navbar-brand" style="font-size: 40px;color:white;" href="#">Social Distancing Violation
+                Detector</a>
         </div>
     </nav>
-    <div class="navbar navbar-dark bg-info">
-        
-        <div class="container">
+    <div class="col-lg-12">
+        <div class="container" style="margin-top:2em">
             <div class="row">
-                <div class="col-sm-8 bd">
-                    <h3>Voiation Stream</h3>
-                    <p> COVID-19 spread is emotionally challenging many people all over the globe.
-                        Every individual is trying to adapt this challenge which is changing the
-                        day-to-day life in unpredictable manner.</p>
-                        <img src="{{ url_for('video_feed') }}" style="height:200px" class="img-rounded" alt="Gesture">
-                </div>
-                <div class="col-sm-4">
+                <div class="col-lg-12">
+                    <p> In the admist of a world pandemic due to COVID-19, maintaining a social distance from any other
+                        individual has become one of the most important step in the prevention of this virus. This
+                        project highlights an alerting system when people are not following social distancing by using
+                        opencv and a YOLO network.</p>
                     <div>
-                <img src= "https://www.burohappold.com/wp-content/uploads/2020/04/social-distancing_gettystock-1024x68">
+                        <h3>Voiation Stream</h3>
+                        <img src="{{ url_for('video_feed') }}" style="height:400px" class="img-rounded" alt="Gesture">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-<body>
+
+
+    <body>
 
 </html>
-        
